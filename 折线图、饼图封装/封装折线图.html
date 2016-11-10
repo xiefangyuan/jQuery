@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="core.js"></script>
+    <script src="attr&css.js"></script>
+    <script src="dom.js"></script>
+    <script src="event.js"></script>
+    <script src="ajax.js"></script>
+    <script src="pz-line.js"></script>
+
+</head>
+<body>
+<div></div>
+<div></div>
+<div></div>
+<script>
+    //把折线图封装成啦一个js插件，调用插件就可以绘制饼图
+    //给第一个元素绘制饼图
+    $('div').css({
+        marginTop:"10px",
+        width:"200px",
+        height:"200px",
+        backgroundColor:"red"
+
+    }).drawLineChart([10,10, 30,30, 50,90, 80,40 ])
+</script>
+</body>
+</html>
